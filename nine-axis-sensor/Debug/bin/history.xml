@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="4.7.4 -mcpu=cortex-m0 -mthumb -g -nostartfiles -Map=nine-axis-sensor.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\nine-axis-sensor -TC:\CooCox\CoIDE\configuration\ProgramData\nine-axis-sensor/arm-gcc-link.ld -g">
+      <target file="nine-axis-sensor.elf" lastModified="1498d461067">
+         <source file="..\obj\lpc11xx_ssp.o" lastModified="1498d210d25"/>
+         <source file="..\obj\spi.o" lastModified="1498d210dbf"/>
+         <source file="..\obj\i2c.o" lastModified="1498d210e45"/>
+         <source file="..\obj\mpu9150_101.o" lastModified="1498d210ebd"/>
+         <source file="..\obj\mpu9150_102.o" lastModified="1498d43a2b7"/>
+         <source file="..\obj\lpc11xx_uart.o" lastModified="1498d211059"/>
+         <source file="..\obj\rs485.o" lastModified="1498d2110f3"/>
+         <source file="..\obj\uart.o" lastModified="1498d21119d"/>
+         <source file="..\obj\system_LPC11xx.o" lastModified="1498d21122e"/>
+         <source file="..\obj\lpc11xx_tmr.o" lastModified="1498d211302"/>
+         <source file="..\obj\lpc11xx_gpio.o" lastModified="1498d21147a"/>
+         <source file="..\obj\xprintf.o" lastModified="1498d2114ef"/>
+         <source file="..\obj\lpc11xx_syscon.o" lastModified="1498d2115bb"/>
+         <source file="..\obj\lpc11xx_iocon.o" lastModified="1498d21164a"/>
+         <source file="..\obj\adc.o" lastModified="1498d2116cc"/>
+         <source file="..\obj\lpc11xx_adc.o" lastModified="1498d21177a"/>
+         <source file="..\obj\startup_lpc11xx.o" lastModified="1498d2117f8"/>
+         <source file="..\obj\main100.o" lastModified="1498d21185c"/>
+         <source file="..\obj\xa_s.o" lastModified="1498d2118f6"/>
+         <source file="..\obj\main101.o" lastModified="1498d21194e"/>
+         <source file="..\obj\main102.o" lastModified="1498d460d1b"/>
+         <source file="..\obj\oled_SSD1306.o" lastModified="1498d211b1d"/>
+         <source file="..\obj\systick.o" lastModified="1498d211bdc"/>
+      </target>
+   </processor>
+</history>

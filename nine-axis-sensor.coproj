@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Project version="2G - 1.7.5" name="nine-axis-sensor">
+  <Target name="nine-axis-sensor" isCurrent="1">
+    <Device manufacturerId="7" manufacturerName="NXP" chipId="142" chipName="LPC1114x201" boardId="" boardName=""/>
+    <BuildOption>
+      <Compile>
+        <Option name="OptimizationLevel" value="0"/>
+        <Option name="UseFPU" value="0"/>
+        <Option name="UserEditCompiler" value=""/>
+        <Includepaths>
+          <Includepath path="."/>
+        </Includepaths>
+        <DefinedSymbols>
+          <Define name="LPC1114x201"/>
+        </DefinedSymbols>
+      </Compile>
+      <Link useDefault="0">
+        <Option name="DiscardUnusedSection" value="0"/>
+        <Option name="UserEditLinkder" value=""/>
+        <Option name="UseMemoryLayout" value="1"/>
+        <Option name="LTO" value="0"/>
+        <Option name="IsNewStartupCode" value="1"/>
+        <LinkedLibraries/>
+        <MemoryAreas debugInFlashNotRAM="1">
+          <Memory name="IROM1" type="ReadOnly" size="0x00008000" startValue="0x00000000"/>
+          <Memory name="IRAM1" type="ReadWrite" size="0x00001000" startValue="0x10000000"/>
+          <Memory name="IROM2" type="ReadOnly" size="" startValue=""/>
+          <Memory name="IRAM2" type="ReadWrite" size="" startValue=""/>
+        </MemoryAreas>
+        <LocateLinkFile path="../../../../../../../../../../coocox/coide/configuration/programdata/nine-axis-sensor/arm-gcc-link.ld" type="0"/>
+      </Link>
+      <Output>
+        <Option name="OutputFileType" value="0"/>
+        <Option name="Path" value="./"/>
+        <Option name="Name" value="nine-axis-sensor"/>
+        <Option name="HEX" value="1"/>
+        <Option name="BIN" value="1"/>
+      </Output>
+      <User>
+        <UserRun name="Run#1" type="Before" checked="0" value=""/>
+        <UserRun name="Run#1" type="After" checked="0" value=""/>
+      </User>
+    </BuildOption>
+    <DebugOption>
+      <Option name="org.coocox.codebugger.gdbjtag.core.adapter" value="ColinkEx"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.debugMode" value="SWD"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.clockDiv" value="1M"/>
+      <Option name="org.coocox.codebugger.gdbjtag.corerunToMain" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkgdbserver" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.userDefineGDBScript" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.targetEndianess" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkResetMode" value="Type 0: Normal"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.resetMode" value="SYSRESETREQ"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifSemihost" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifCacheRom" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ipAddress" value="127.0.0.1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.portNumber" value="2009"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.autoDownload" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.verify" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.downloadFuction" value="Erase Effected"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.defaultAlgorithm" value="LPC11xx_32.elf"/>
+    </DebugOption>
+    <ExcludeFile/>
+  </Target>
+  <Components path="./"/>
+  <Files>
+    <File name="src/i2c.c" path="src/i2c.c" type="1"/>
+    <File name="lib/cmsis_lpc11xx" path="" type="2"/>
+    <File name="lib/Periph_Lib/src/lpc11xx_iocon.c" path="lib/Periph_Lib/src/lpc11xx_iocon.c" type="1"/>
+    <File name="lib/Periph_Lib/inc/lpc11xx_libcfg.h" path="lib/Periph_Lib/inc/lpc11xx_libcfg.h" type="1"/>
+    <File name="lib/cmsis_lpc11xx/system_LPC11xx.c" path="lib/cmsis_lpc11xx/system_LPC11xx.c" type="1"/>
+    <File name="src" path="" type="2"/>
+    <File name="inc/spi.h" path="inc/spi.h" type="1"/>
+    <File name="lib/cmsis_core/core_cm0.h" path="lib/cmsis_core/core_cm0.h" type="1"/>
+    <File name="lib/Periph_Lib/inc/lpc11xx_syscon.h" path="lib/Periph_Lib/inc/lpc11xx_syscon.h" type="1"/>
+    <File name="inc/uart.h" path="inc/uart.h" type="1"/>
+    <File name="lib/Periph_Lib/src" path="" type="2"/>
+    <File name="main/102/main102.c" path="main/102/main102.c" type="1"/>
+    <File name="inc/i2c.h" path="inc/i2c.h" type="1"/>
+    <File name="lib/cmsis_lpc11xx/startup" path="" type="2"/>
+    <File name="src/xprintf.c" path="src/xprintf.c" type="1"/>
+    <File name="src/systick.c" path="src/systick.c" type="1"/>
+    <File name="main/102/mpu9150_102.h" path="main/102/mpu9150_102.h" type="1"/>
+    <File name="src/spi.c" path="src/spi.c" type="1"/>
+    <File name="inc/oled_SSD1306.h" path="inc/oled_SSD1306.h" type="1"/>
+    <File name="lib/Periph_Lib/inc/lpc_types.h" path="lib/Periph_Lib/inc/lpc_types.h" type="1"/>
+    <File name="lib/Periph_Lib/inc/lpc11xx_ssp.h" path="lib/Periph_Lib/inc/lpc11xx_ssp.h" type="1"/>
+    <File name="src/xa_s.c" path="src/xa_s.c" type="1"/>
+    <File name="main/100" path="" type="2"/>
+    <File name="src/uart.c" path="src/uart.c" type="1"/>
+    <File name="lib/Periph_Lib/inc/lpc11xx_adc.h" path="lib/Periph_Lib/inc/lpc11xx_adc.h" type="1"/>
+    <File name="lib/Periph_Lib/inc/lpc11xx_tmr.h" path="lib/Periph_Lib/inc/lpc11xx_tmr.h" type="1"/>
+    <File name="inc/systick.h" path="inc/systick.h" type="1"/>
+    <File name="lib/Periph_Lib/src/lpc11xx_syscon.c" path="lib/Periph_Lib/src/lpc11xx_syscon.c" type="1"/>
+    <File name="lib/Periph_Lib/src/lpc11xx_uart.c" path="lib/Periph_Lib/src/lpc11xx_uart.c" type="1"/>
+    <File name="lib/cmsis_lpc11xx/LPC11xx.h" path="lib/cmsis_lpc11xx/LPC11xx.h" type="1"/>
+    <File name="lib/cmsis_core/core_cmInstr.h" path="lib/cmsis_core/core_cmInstr.h" type="1"/>
+    <File name="inc/xprintf.h" path="inc/xprintf.h" type="1"/>
+    <File name="lib" path="" type="2"/>
+    <File name="main/101/main101.c" path="main/101/main101.c" type="1"/>
+    <File name="main/101/mpu9150_101.c" path="main/101/mpu9150_101.c" type="1"/>
+    <File name="main/101/mpu9150_101.h" path="main/101/mpu9150_101.h" type="1"/>
+    <File name="lib/Periph_Lib" path="" type="2"/>
+    <File name="lib/cmsis_lpc11xx/startup/startup_lpc11xx.c" path="lib/cmsis_lpc11xx/startup/startup_lpc11xx.c" type="1"/>
+    <File name="lib/cmsis_core/core_cmFunc.h" path="lib/cmsis_core/core_cmFunc.h" type="1"/>
+    <File name="main/102" path="" type="2"/>
+    <File name="src/rs485.c" path="src/rs485.c" type="1"/>
+    <File name="main" path="" type="2"/>
+    <File name="inc/tri_S_Font6x8_90.h" path="inc/tri_S_Font6x8_90.h" type="1"/>
+    <File name="inc" path="" type="2"/>
+    <File name="lib/cmsis_core" path="" type="2"/>
+    <File name="lib/Periph_Lib/src/lpc11xx_ssp.c" path="lib/Periph_Lib/src/lpc11xx_ssp.c" type="1"/>
+    <File name="main/101" path="" type="2"/>
+    <File name="main/100/main100.c" path="main/100/main100.c" type="1"/>
+    <File name="lib/Periph_Lib/inc/lpc11xx_gpio.h" path="lib/Periph_Lib/inc/lpc11xx_gpio.h" type="1"/>
+    <File name="lib/Periph_Lib/inc/lpc11xx_uart.h" path="lib/Periph_Lib/inc/lpc11xx_uart.h" type="1"/>
+    <File name="lib/Periph_Lib/src/lpc11xx_gpio.c" path="lib/Periph_Lib/src/lpc11xx_gpio.c" type="1"/>
+    <File name="lib/Periph_Lib/inc/lpc11xx_iocon.h" path="lib/Periph_Lib/inc/lpc11xx_iocon.h" type="1"/>
+    <File name="lib/Periph_Lib/inc" path="" type="2"/>
+    <File name="inc/rs485.h" path="inc/rs485.h" type="1"/>
+    <File name="src/oled_SSD1306.c" path="src/oled_SSD1306.c" type="1"/>
+    <File name="main/project.h" path="main/project.h" type="1"/>
+    <File name="lib/Periph_Lib/src/lpc11xx_adc.c" path="lib/Periph_Lib/src/lpc11xx_adc.c" type="1"/>
+    <File name="src/adc.c" path="src/adc.c" type="1"/>
+    <File name="main/102/mpu9150_102.c" path="main/102/mpu9150_102.c" type="1"/>
+    <File name="lib/cmsis_lpc11xx/system_LPC11xx.h" path="lib/cmsis_lpc11xx/system_LPC11xx.h" type="1"/>
+    <File name="inc/xa_s.h" path="inc/xa_s.h" type="1"/>
+    <File name="lib/Periph_Lib/src/lpc11xx_tmr.c" path="lib/Periph_Lib/src/lpc11xx_tmr.c" type="1"/>
+    <File name="main/102/main102.h" path="main/102/main102.h" type="1"/>
+  </Files>
+</Project>
